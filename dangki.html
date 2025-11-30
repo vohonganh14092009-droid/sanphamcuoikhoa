@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng Kí</title>
+    <link rel="stylesheet" href="dangki.css">
+</head>
+
+<body>
+
+    <form action="spcktc.html" enctype="application/x-www-form-urlencoded">
+        <h2>Đăng kí</h2>
+
+        <div>
+            <label for="username">User name:</label>
+            <input type="text" name="username" id="username" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+
+        <div>
+            <label for="confirm_password">Xác nhận mật khẩu:</label>
+            <input type="password" name="confirm_password" id="confirm_password" required>
+        </div>
+
+        <div>
+            <label for="ngay_sinh">Ngày tháng năm sinh:</label>
+            <input type="date" name="ngay_sinh" id="ngay_sinh">
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="so_dien_thoai">Số điện thoại:</label>
+            <input type="tel" name="so_dien_thoai" id="so_dien_thoai">
+        </div>
+
+        <div>
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="bi bi-box-arrow-in-right"></i> Đăng kí
+            </button></a>
+        </div>
+        <p class="text-center mt-3">
+            Bạn đã có tài khoản?
+            <a href="index.html" class="link-custom">Đăng nhập</a>
+        </p>
+    </form>
+
+</body>
+
+</html>

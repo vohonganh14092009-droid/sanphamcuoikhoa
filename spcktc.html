@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App Bán Hàng Trực Tuyến - EcomVerse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="spcktc.css">
+</head>
+
+<body>
+
+  <!-- Thanh điều hướng -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <h1 class="navbar-brand" >🛍️ EcomVerse</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="me-4"><a class="link-custom" href="dangnhap.html">Đăng Nhập</a></li>
+          <li class="me-4"><a class="link-custom" href="dangki.html">Đăng Kí</a></li>
+          <li class="me-4"><a class="link-custom" href="gioithieu.html">Thông tin về các STMĐT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Phần giới thiệu -->
+  <section class="hero">
+    <h1>Khám phá các ứng dụng bán hàng hàng đầu</h1>
+    <p>Kết nối trực tiếp tới các nền tảng thương mại điện tử uy tín nhất chỉ với một cú nhấp chuột.</p>
+  </section>
+  <!-- Danh sách ứng dụng -->
+  <section id="apps" class="container py-5">
+    <h2 class="text-center fw-bold mb-4 text-danger">Ứng dụng nổi bật</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="data:image/jpeg;base64,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"
+            class="card-img-top p-3 bg-light" alt="Shopee">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Shopee</h5>
+            <p class="card-text text-muted">Nền tảng mua sắm trực tuyến phổ biến nhất Đông Nam Á.</p>
+            <a href="https://shopee.vn" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="https://cdn.prod.website-files.com/5fb85f26f126ce08d792d2d9/66bf104a011aa76f75bf86e1_64ee52f42060d680ebe0024b_tiki_04.jpeg"
+            class="card-img-top p-3 bg-light" alt="Tiki">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Tiki</h5>
+            <p class="card-text text-muted">Trang thương mại điện tử Việt Nam uy tín, giao hàng siêu nhanh.</p>
+            <a href="https://tiki.vn" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="https://salework.net/wp-content/uploads/2022/11/lazada-la-gi-3.jpg"
+            class="card-img-top p-3 bg-light" alt="Lazada">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Lazada</h5>
+            <p class="card-text text-muted">Mạng lưới mua sắm khu vực Đông Nam Á với hàng triệu sản phẩm.</p>
+            <a href="https://www.lazada.vn" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img src="https://babuvi.com/wp-content/uploads/2024/11/logo-taobao-512.png" class="card-img-top p-3 bg-light"
+            alt="Taobao">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Taobao</h5>
+            <p class="card-text text-muted">Sàn thương mại điện tử trực tuyến lớn nhất Trung Quốc
+            </p>
+            <a href="https://www.taobao.com" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQoAAAC9CAMAAAB8rcOCAAABCFBMVEX///8AAAD8/Pz+mQAEBATu7u7m5ub///1DQ0P//v9JSUm4uLjGxsaAgID8///19fVoaGg7OztfX1+Kior+lwBRUVH+//r///Wrq6vf39/6//zQ0NC9vb2xsbFVVVUVFRWYmJgwMDB2dnYqKirY2NiOjo6Dg4Ojo6PzkwD/lgD6nAD0sVIcHBwlJSWdnZ1lZWX/9///+t/slQD647L/9eH//+//++3888f305f2yYv0xXf3zYb/9dj13pbynjDpoyXqsU/lxHrjkgD43J/vmRvsoB30u1nzumT64bP99MP899HppEL1x3T0/fPpnjH968busUbzvIf76Kz51ZL7xoD41Ybv16fglzFEToAJAAAOgklEQVR4nO1aDVviuBZuw0etQBGEFooiOKAFv4Yio4vujLvqMKujeMfdvf//n9yTNk3SFhzB+qzePe/jI5Cmp8mbk/OVKgoCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBCIF4AQoijFRm3nqFltru3U6oS1sctST/pH6hu1Wq5D6Fd2OZPfrNUaGdpCQpIVT/LuzhqVvL5ZD10NiY6NSZIB3+v0CblGccbI5XtIJ+eP7QnRP0Fje0sV+NDNhsZSa5Y95OivzZLfqb3LqFEaZXbfdj0uOb8mS253M+Grq7PRDHXLtkqBgOpmiA1SLPhDW6MjLu4esAm0Ipw9G52qGGw6naYfXYnVTHBtC5ZY6tosemu2Te/y/lS1FVGixooqi2ZdBMrqHOxKUrpcAP23X5MF5IJrOzBO6WEHnYiCPgdEac0ay2qRT0qiovhB7rNSBA1dDd22HZLcVWegKa3Y0c+pqB9Er5UlARIV8tiAtM4Se2QnWC8ZaXWVd5CoWAv3KSjQIt+cVg8lydtqTC5taS5CRSc2urTaFsskUXEkd0yrHxbXil0x3vAzuzEqDjqhuVHq82p0umKXt6SeIdGHfBs9TQVMJsseFAjw/5f4LDkV3byqhmfSWpSJeiAgvoDBpAQVsZGXq5EGqhZsnB2pMdxFJc+mIrCX6fAg+T7kVKyvRiSAWixEBJGVuLTTCgkM7FNARZysGNJ0Y7EhSCyt7LR2hOS0mgv6zDWbDX90XaFOW80q90VpdSNKRSk+vM5iSpHlwtO+9LwQtRahQrCRjrVITYzjLG/Yz3tNG+KmQkBFvipQ3hcyy34HIUPdpY57l3doM8XKiR7p6OA2F6Oixm/vsCmIEZdiVABh6xsbLT5mD+1ubVde3aIv55A31JnkGm9ZnWXd65LRy/rWZJ231Pw7dvms2TwFFXB3odGotcVyrS9GxVpw347vh+GfWBwSpULd96aVlf3bdlEaI0XWv6scjKkVBKVFPtetGVSQkhCR85ko8h2xymSQdtCyEtEKkO0pX7HNG9Ziz3gSnPcGbxIrHKci57fkBPVV5g1EeMNCzoL4HcxbWI8YDwT6M8uY5kZxgys7M1tyDNRRIlQcBjcFaEaf8hPU87nD9aOVbbFM21xWMUrFFvPVRTGAPJtoZD9A7AVpw2GhXCoIDRD+Iq4UDcH3hyJ7jDDp2YAwYcpaYSrULTbaQJXkyGgxiMHx5YxTcaSwTbQS7SMtRj0sTvoxnwoCE+Dbp8FuIAdBW+AXiTSWaoQK7l+rARUrS1Ihhlzgg4pR0Qp68k20FbSI5crOlS9i1dglKcDgoZ3wH1UxRG6mtiIehKcm/CnLU0GyjVxru9oWhjxGRS1YYP64dnC3UPA4FcVsY7O13WyLHDXaY1OKbrgSCXalzEaEJ/UwFdzYca1enApP5/Pdqoha51KxGaOCP24eFUWQrMYQ2SD8CWludT1+AhRE1zLvmQ9TwR+7PBU00F8PRwpPUKFEqOCmadYGAcmF2ZIjVDTFFSkFF95CihDEJttMngr/kbOi6hgVuQWp8JL0eNobpeJQPL4sNQv7LVEh/NtuslSASmQCi5vmwcJcs7kIFYRk+L6OsUHkEfC8DXplJJLErLuzGlt0GRPUClIM/KI33HZzrSCivpdpRbjMQyW3Z1JBVoRKbsheWGjFPCqS3SBS6aW06a3JE850ISqaYoarOU+y2OfyBlkXI9hWZlMxY4OkE6dCSheD+tMT0ebzqSAiOBfWNhbSU6WQUuG2XJyVg2zJmb6arZDCRh4zJEMF4Smi54LJbCqIUpRcjMiDPIhMVqJCxGIbyVIhKnSrvEKcCBXwWziFYOKzqOCSmMZzyPmG5FeE3+0kS4VIokSJWTzsJVR0YzfJmQtvkjLLpsIsRcCTCLzbwoK0eWMmWSrWeGFTKKcoRryECnn12ER4Piu0Qsr/1fXdWq6Rlc2FcEG8dixk+BNNjopVrsasECgX4kA6WZoK4ZKzQVop6r7+1GBHSmEmG8hWtdXxTxjlumuQrErx/U7CVAiVbQRUtGQvryxNhVhRXm0VztHPH+QsI4RSzT/oEKWbnWB0XYmdZKkQWtFiLRkRdAZloKWoaPPfu2xFJXVTj4KVmFNFP/CLczyVPRB1GXZHiUSS9JdSIcKgD/6JNZFUNli8pagQyXTbP2Uuhg4qfI2fzQOFX1fd4b/XfYfMpgkxGUvbkqOCPyutlun+ra+G1skvki1FhXDJ6hGV0pE1IO37BDKfCl+KpEgtWicOhivOCpOjItiNXuh7VKhGM9S1pakQZiCtbq0Vqv63oCntHYX8lAqp+q/ul5tbIkTfUJKmoii//MCHKWWSS1ORieX9nlDOPC1XCirSsW+ssNuOW5O0VBNPMvA+jD4IsC0GlF+aCpplRaZAJfOjTyo5pBVbW6FlYVI6ahxpdYVHH0km6aXYsV8X+PEXcN/3g8+ggsyoV+zHFrRFY1Cv8YP3Wg+jol3IdbJFqiWZTi7I5IOZNdQo0mppxksFLy/dKBlaYZdrNtQ0N72vJSY9w6/Ga5uzqGB96umwdfCIXPX0u+qvKqXioBs95a232vLMOvuh/ZOe86qJCEgDL7NEFSt0mt2s00avnlMu6opGlLBWzKFiZkEvG3LMZa9+m6FR6FrwQluhlCOKwl8xYKwqZGN1LTgLgQFuy2JCLyCROBVEaEVJWRj8zbGDbXaWrxTLYOI10yCaaZv6ervkQbws1igxBIf7cAdrKciSj4IznUKDmfxMkxZiCM+7NJ3ohGiapuuaBi06sY3gmsI61kWxuLQbfuGMP1ZUdzorrCmnLIFiPZ/PN7Ly4mQUTbE0k+gGMc1o/6df4pCvFjueZPlqRnTQTEoAEAEUaCbAvrNNW58hsrHZWu8ebmR//hYiiX1ZBPwYTrqdEEOjw9P0j9odfT8ypMb8hUkSbmLniFwu+07kAUpi6PRtzRqc/Dj9ZQw4O50ONP0uNr7Zd0sjkF8YJYS9E7AUF3FQTTV1wzBs2zKNZGQK2QF0wzTPf9377DpOhcKpuF/G5/aLZL4CdGLpg+GxZlij2AZJCsbddPzZqaRSHhEp+ExVehej13rcstA1y/zt9/vLkQHm7JUecTy+TvUoA5WUT0WqX6l8+fRKj1seYNOGv/fci6FpgCWDTW3Dzp5h0paDrRv28YVD4bpXFI7T76d6lf7126OCzvzHdb/ifJ2ONMMGu6Hr5jL7eLZ0kGX9Njk7/Tb942YwGBzf/HF54VR6qTdIhWYrmmFOb52K406GI+pTwZImSIVlkxF4KM34qBvgUsFAH+/RXXL75myFYli6ZtvnE6fST7l7w0+2TfUiKem2RlkAEgyD3AEb4Kd04zu1oN+tpJ6RHCCmMC3j+K/fU/0e2IzLc8swraRMKNCgWzqNsCCssgYjINq8G/f6/cppYpqXFCDsBtehgzO9vE9Rg+Z8GU9HMEwIDg24BBcpLYtTYxgKpQA+LKpohvJp+ufDxTmoyd0EqHCGr+WwXgrb0Ed/PDjU5fUq118vBybwQLc4zIVOZPFxQ5KneSYYAk3DsM5P91wn5f5HMY3RfS9V+Xz+RqmwYZcY9ujM7cM27qWc3v14CGxA8qTT/MFcwo6CAQJAqgEeejAcX1Oae+6pZuvTazCb35Nz2MkCNICG39bw1gGLBju5522UT6DblmUBT4uPG+yNrn8Eb3Tz4/sXt5Lqu/3e1eMIzOZlP1VxfyRnmpOFodCE0dCVwdiFHULjQWo2Pk8uz02605eIRDVCE5ub4eTK6fVokNnr3Z5YFhilr0D3w4C8ObPpA3YA7GsCXt+aTlzQC0gSQDlSFedqb/zjZrTEvoZMdDjeu6LhFOQcIOrqcaB9tA3l+Esl5TzqJOHsLyn4q+79M0bDB9dLnahiACFAx8Uvw5vBCMyJQZMWgxVgPB/pQ/HNJGgCaBDwOTgZnj1cOzzlSKXcybECWgfB5xCo/jLQ9TdKhQztbvB473jJU58qBqDvus7ni7PLk5vBJzAcMGnbtMC/GB68m6iFhQuj4/Pptz8nt1cOvddPwSirt99GBjUOJtEmwMujZb4DKjQaBQEZbg9AFYNuFjAfTh8yqusvF9/P/h5Oz48Ho9HIYhiNBoObm5Ph5eN4cnvtOkwXWD4ONudhODI1v9pgnFz1UhfHhv5WPYgEjXzU7iASP70FA+qZ0EoqxZcYWOnRLPPq/vZ2b+9iQnGxt3d7fw8pp+MzQE0upc8zvxDA3j4ODMP0zY1h/+X0r6cW5Cb/8DyfAXCChNC05PjyAhLWXipYYr7vvSn6TeKTf/eCtBQD2Bma49GYkzmMwW3FvbQtMNH/7DSfBYguQXsJjZin4ysnmKRAn09UvuLrTT/42qOK5Hw+O7Eg4jQ0y2KmYei6pzR2s96BrZAAruD8EeJlcKyVlB9ssJ0yA1K7TxFViEFUpPb3fx8t+z1oRBg0+7Ctk8cL16EGlDLiWdComvD5c8Xou9cQnd3RAkVYpDk6hpjt/VFBPaQCvnN08+vXK9fpM82YoxX9wFL03Iez6bFGmSSxMJVuv7fvO2IAnYCwiWYgxt3o5PHrvQteYs7+8BQDLl9D+DH4RBNSjZjmXZQKzbT0j9ar1dZfDQate2q6eUetqG6OIIY8He/du8F5BgO1C4Cr28nZ5XQAGRyksuCFaOAZ0wrgiDvWdwaNRtoeqFYb1Nd+Op/++PWv75OvFxBQUHydjB///nY+GNHal0H3Fb1rzi7QFeNduY4nYXjFT9g4Jgs26TGgbWuvdo7ydkFJgKnTDWB45Rkghvg52Tu0hy8DPRSHnWN4RyYAPykLMtR/FQzvAI0qh8lSdPjzbcS/jQs/Hadu1uT1ivcYKyAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAg/h/xP/5nQM/gVRl5AAAAAElFTkSuQmCC"
+            class="card-img-top p-3 bg-light" alt="Amazon">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Amazon</h5>
+            <p class="card-text text-muted">Gã khổng lồ thương mại điện tử toàn cầu – mọi thứ bạn cần.</p>
+            <a href="https://www.amazon.com" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="data:image/png;base64,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"
+            class="card-img-top p-3 bg-light" alt="eBay">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">eBay</h5>
+            <p class="card-text text-muted">Trang đấu giá và mua sắm trực tuyến nổi tiếng thế giới.</p>
+            <a href="https://www.ebay.com" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="data:image/png;base64,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"
+            class="card-img-top p-3 bg-light" alt="Alibaba.com">
+          <div class="card-body">
+            <h5 class="card-title fw-bold"> Alibaba</h5>
+            <p class="card-text text-muted">Nhà bán lẻ trực tuyến lớn nhất thế giới</p>
+            <a href="https://www.alibaba.com" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center">
+          <img
+            src="https://yt3.googleusercontent.com/ytc/AIdro_kFdWErk_iTcB1agpY6VZCstammQGsFS50N0hblKfMTKGG4=s900-c-k-c0x00ffffff-no-rj"
+            class="card-img-top p-3 bg-light" alt="ChoTot">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Chợ Tốt</h5>
+            <p class="card-text text-muted">Mua ngay kẻo hết, để mai lại tiếc</p>
+            <a href="https://www.chotot.com/" target="_blank" class="btn btn-visit">Truy cập ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Giới thiệu -->
+  <section id="about" class="container py-5 text-center">
+    <h2 class="fw-bold text-danger mb-3">Về EcomVerse</h2>
+    <p class="text-muted">
+      EcomVerse là trang tổng hợp giúp bạn truy cập nhanh đến các nền tảng mua sắm trực tuyến hàng đầu.
+      Chúng tôi giúp người dùng tiết kiệm thời gian, so sánh giá cả và lựa chọn nơi mua sắm uy tín nhất.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EcomVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

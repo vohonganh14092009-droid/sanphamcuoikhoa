@@ -1,0 +1,65 @@
+/* 🌄 Ảnh nền toàn màn hình */
+body {
+  background: url('https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌫️ Lớp làm mờ nền */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+/* 💎 Card hiệu ứng kính */
+.card {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.form-label {
+  font-weight: 500;
+  color: #0d47a1;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #1e88e5, #42a5f5);
+  border: none;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #1565c0, #2196f3);
+  transform: scale(1.03);
+}
+
+.text-primary {
+  color: #1565c0 !important;
+}
+
+.link-custom {
+  color: #0d47a1;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}

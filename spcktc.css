@@ -1,0 +1,90 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfbfb;
+  color: #333;
+}
+
+.navbar {
+  background: #ef629f;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+}
+
+.hero {
+  background: #f8bcd9;
+  /* hồng pastel */
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+.card img {
+  height: 180px;
+  object-fit: contain;
+  padding: 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.btn-visit {
+  background-color: #ef629f;
+  color: white;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+
+.btn-visit:hover {
+  background-color: #d04b87;
+}
+
+footer {
+  background-color: #ef629f;
+  color: white;
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+.link-custom {
+  color: #e7e9ed;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link-custom:hover {
+  text-decoration: underline;
+}
